@@ -6,15 +6,15 @@ This Python project provides a comprehensive set of mathematical functions, maki
 Features
 
     
-Basic Arithmetic Operations: Addition, Subtraction, Multiplication, Division, Exponentiation.
-Trigonometric Functions: Sine(sin), Cosine(cos), Tangent(tan), Cotan(cot), Secant(sec), Cosecant(cosec).
-Inverse Trignomtric Functions: sin-1x, Cos-1x, Tan-1x.
-Root Operations: Square Root, Cube Root, Random Root(y√x).
-Advanced Functions: Factorial, Permutations, Combinations.
-Logarithmic Operations: Natural Logarithm, Base-10 Logarithm, Base-2 Logarithm.
-Limit,Differentiation and Integration: Limit,Differentiation, Definite and Indefinite Integration.
-Matrix Operations: Matrix Addition,Subtraction and Multiplication.
-Series Expansion and Finite Differences: Series Expansion and Finite Differences.
+1.Basic Arithmetic Operations: Addition, 2.Subtraction, Multiplication, Division, Exponentiation.
+3.Trigonometric Functions: Sine(sin), Cosine(cos), Tangent(tan), Cotan(cot), Secant(sec), Cosecant(cosec).
+4.Inverse Trignomtric Functions: sin-1x, Cos-1x, Tan-1x.
+5.Root Operations: Square Root, Cube Root, Random Root(y√x).
+6.Advanced Functions: Factorial, Permutations, Combinations.
+7.Logarithmic Operations: Natural Logarithm, Base-10 Logarithm, Base-2 Logarithm.
+8.Limit,Differentiation and Integration: Limit,Differentiation, Definite and Indefinite Integration.
+9.Matrix Operations: Matrix Addition,Subtraction and Multiplication.
+10.Series Expansion and Finite Differences: Series Expansion and Finite Differences.
 
 
     
