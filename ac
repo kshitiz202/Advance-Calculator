@@ -1,0 +1,115 @@
+
+import math
+
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Error! Division by zero."
+
+def power(x, y):
+    return x ** y
+
+def sqrt(x):
+    if x >= 0:
+        return math.sqrt(x)
+    else:
+        return "Error! Cannot calculate square root of negative number."
+
+def log(x, base=10):
+    if x > 0:
+        return math.log(x, base)
+    else:
+        return "Error! Logarithm undefined for non-positive numbers."
+
+def sin(x):
+    return math.sin(math.radians(x))
+
+def cos(x):
+    return math.cos(math.radians(x))
+
+def tan(x):
+    return math.tan(math.radians(x))
+
+def factorial(x):
+    if x >= 0 and x == int(x):
+        return math.factorial(int(x))
+    else:
+        return "Error! Factorial is only defined for non-negative integers."
+
+def main():
+    print("Advanced Calculator")
+    print("Select operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Power")
+    print("6. Square Root")
+    print("7. Logarithm")
+    print("8. Sin")
+    print("9. Cos")
+    print("10. Tan")
+    print("11. Factorial")
+
+    while True:
+        choice = input("\nEnter choice (1-11): ")
+
+        if choice in ['1', '2', '3', '4', '5']:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+
+            if choice == '1':
+                print(f"{num1} + {num2} = {add(num1, num2)}")
+            elif choice == '2':
+                print(f"{num1} - {num2} = {subtract(num1, num2)}")
+            elif choice == '3':
+                print(f"{num1} * {num2} = {multiply(num1, num2)}")
+            elif choice == '4':
+                print(f"{num1} / {num2} = {divide(num1, num2)}")
+            elif choice == '5':
+                print(f"{num1} ^ {num2} = {power(num1, num2)}")
+
+        elif choice == '6':
+            num = float(input("Enter number: "))
+            print(f"Square root of {num} = {sqrt(num)}")
+
+        elif choice == '7':
+            num = float(input("Enter number: "))
+            base = float(input("Enter base (default 10): ") or 10)
+            print(f"Log of {num} with base {base} = {log(num, base)}")
+
+        elif choice == '8':
+            angle = float(input("Enter angle in degrees: "))
+            print(f"Sin({angle}) = {sin(angle)}")
+
+        elif choice == '9':
+            angle = float(input("Enter angle in degrees: "))
+            print(f"Cos({angle}) = {cos(angle)}")
+
+        elif choice == '10':
+            angle = float(input("Enter angle in degrees: "))
+            print(f"Tan({angle}) = {tan(angle)}")
+
+        elif choice == '11':
+            num = float(input("Enter number: "))
+            print(f"Factorial of {num} = {factorial(num)}")
+
+        else:
+            print("Invalid input! Please enter a number between 1 and 11.")
+
+        next_calculation = input("Do you want another calculation? (yes/no): ")
+        if next_calculation.lower() != 'yes':
+            break
+
+if __name__ == "__main__":
+    main()
